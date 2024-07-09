@@ -2,7 +2,7 @@
     width: 100%;
     height: calc(102.4rem - 6.4rem);
     max-height: 100vh;
-    background: url(Hero__image2.png);
+    background: url(/Hero__image.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
