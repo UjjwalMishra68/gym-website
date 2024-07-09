@@ -1,0 +1,116 @@
+.trainers__name {
+    font-size: var(--size-28px);
+    color: var(--clr-heading);
+    margin-bottom: var(--size-16px);
+}
+
+.trainers__description {
+    font-size: var(--size-14px);
+    flex-direction: column;
+    gap: .8rem;
+    margin-bottom: var(--size-24px);
+}
+
+.trainers__description>p {
+    max-width: 41ch;
+}
+
+.trainers__socials {
+    width: 100%;
+    cursor: pointer;
+    height: 4.8rem;
+    color: var(--clr-heading);
+    font-size: var(--size-24px);
+    background-color: var(--clr-card100);
+    flex: 1;
+    padding: .4rem 1.6rem;
+    gap: .8rem;
+}
+
+.trainers__socials i {
+    color: var(--clr-rose);
+}
+
+.trainers__container {
+    flex-direction: column;
+    gap: 3.2rem;
+    margin-top: 3.2rem;
+}
+
+.trainers__container img {
+    width: 35.1rem;
+    height: 30.4rem;
+    object-fit: cover;
+    margin-bottom: var(--size-24px);
+}
+
+.trainers {
+    flex-direction: column;
+
+}
+
+/* @media (min-width: 475px){} */
+@media (min-width: 1024px) {
+    .trainers {
+        flex-direction: row;
+        gap: 12rem;
+        align-items: center;
+    }
+
+    .trainers__container {
+        align-items: center;
+        gap: 5.6rem;
+    }
+
+    .trainers__container img {
+        width: 31.8rem;
+        height: 38.4rem;
+        margin-bottom: 0rem;
+    }
+
+    .trainers__name {
+        font-size: var(--size-40px);
+    }
+
+    .trainers__description {
+        font-size: var(--size-16px);
+        gap: 1.6rem;
+        margin-bottom: var(--size-48px);
+    }
+
+    .trainers__socials {
+        max-width: 28rem;
+    }
+
+    .satyam__tyagi {
+        flex-direction: row;
+    }
+
+    .krishna__kashyap {
+        flex-direction: row-reverse;
+    }
+}
+
+@media (min-width: 1440px) {
+    .trainers__container {
+        gap: var(--size-64px);
+    }
+
+    .trainers__name {
+        font-size: var(--size-48px);
+    }
+
+    .trainers__container img {
+        height: 42rem;
+        width: 40rem;
+    }
+
+    .trainers__socials,
+    .trainers__socials i {
+        font-size: var(--size-28px);
+    }
+
+    .trainers__description {
+        font-size: var(--size-18px);
+    }
+}

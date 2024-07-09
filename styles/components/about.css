@@ -1,0 +1,212 @@
+.about {
+    align-items: center;
+    justify-content: center;
+}
+
+.about__wrapper {
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.about_image_container {
+    max-width: 35.1rem;
+    height: 32rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.about_image_container::after {
+    content: "";
+    background-color: var(--clr-rose);
+    width: 13.2rem;
+    height: 150%;
+    z-index: -1;
+    position: absolute;
+    transform-origin: center center;
+    transform: rotate(310deg);
+    transition: transform 0.5s ease-in-out;
+}
+
+.about_image_container:hover::after {
+    transform: rotate(228deg);
+}
+
+.about_image_container img {
+    width: calc(35.1rem - 2.4rem);
+    height: 31.2rem;
+    object-fit: cover;
+}
+
+.about__subheading {
+    font-size: var(--size-18px);
+    margin-bottom: var(--size-16px);
+}
+
+.about__heading {
+    font-size: var(--size-28px);
+    color: var(--clr-heading);
+    max-width: 32ch;
+    margin-bottom: .8rem;
+}
+
+.about__description {
+    font-size: var(--size-14px);
+    max-width: 41ch;
+    margin-bottom: var(--size-24px);
+}
+
+.about_benifits_container {
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.benifit__heading {
+    gap: .8rem;
+    font-size: var(--size-20px);
+    color: var(--clr-heading);
+    align-items: center;
+}
+
+.benifit__heading img {
+    height: 2rem;
+    width: 2rem;
+}
+
+.benifit__description {
+    font-size: var(--size-14px);
+    max-width: 32ch;
+}
+
+.about__benifits {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1.6rem;
+}
+
+/* @media (min-width: 475px){} */
+@media (min-width: 1024px) {
+    .about__wrapper {
+        flex-direction: row;
+        gap: 7.2rem;
+        justify-content: center;
+    }
+
+    .about_image_container {
+        min-width: 38.8rem;
+        height: 56rem;
+    }
+
+    .about_image_container img {
+        width: 37.2rem;
+        height: 54.4rem;
+    }
+
+    .about_image_container::after {
+        transform: rotate(330deg);
+    }
+
+    .about_image_container:hover::after {
+        transform: rotate(210deg);
+    }
+
+    .about__content {
+        width: 50%;
+    }
+
+    .about__subheading {
+        font-size: var(--size-24px);
+        margin-bottom: var(--size-40px);
+    }
+
+    .about__heading {
+        font-size: var(--size-40px);
+        margin-bottom: var(--size-16px);
+    }
+
+    .about__description {
+        font-size: var(--size-16px);
+        margin-bottom: var(--size-40px);
+        max-width: 48ch;
+    }
+
+    .about__benifits {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.4rem;
+        min-width: max-content;
+    }
+
+    .about_benifits_container {
+        gap: 1.6rem;
+        min-width: max-content;
+    }
+
+    .benifit__heading {
+        font-size: var(--size-24px);
+    }
+
+    .benifit__description {
+        font-size: var(--size-16px);
+        max-width: 28ch;
+    }
+
+    .benifit__heading img {
+        height: 2.4rem;
+        width: 2.4rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .about__wrapper {
+        padding-right: 3.2rem;
+    }
+
+    .about_image_container {
+        min-width: 44rem;
+        height: 60rem;
+    }
+
+    .about_image_container img {
+        width: 42.2rem;
+        height: 58.2rem;
+    }
+
+    .about_image_container::after {
+        width: 24rem;
+        transform: rotate(328deg);
+    }
+
+    .about__benifits {
+        row-gap: 4rem;
+        column-gap: 4rem;
+    }
+
+    .about__subheading {
+        font-size: var(--size-28px);
+        margin-bottom: var(--size-32px);
+    }
+
+    .about__heading {
+        font-size: var(--size-48px);
+    }
+
+    .about__description {
+        max-width: 48.4ch;
+        margin-bottom: var(--size-56px);
+        font-size: var(--size-18px);
+    }
+
+    .benifit__heading {
+        font-size: var(--size-32px);
+    }
+
+    .benifit__description {
+        font-size: var(--size-18px);
+        max-width: 30ch;
+    }
+
+    .benifit__heading img {
+        height: 2.8rem;
+        width: 2.8rem;
+    }
+}
